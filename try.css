@@ -6,8 +6,8 @@
 }
 
 body {
-    background-color: black; /* Set the body background color to black */
-    color: white; /* Ensure text is visible against the black background */
+    background-color: black;
+    color: white;
     font-family: Arial, sans-serif;
 }
 
@@ -18,17 +18,17 @@ nav {
     align-items: center;
     background-color: black;
     padding: 10px 20px;
-    height: 60px; /* Ensure the nav bar has a defined height */
-    position: sticky; /* Make the nav bar sticky */
-    top: 0; /* Stick to the top of the viewport */
-    z-index: 10; /* Bring it above other elements */
+    height: 60px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav .logo {
     font-size: 24px;
     font-weight: bold;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white; /* Ensure logo text is visible */
+    color: white;
     text-decoration: none;
 }
 
@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white; /* Ensure nav links are visible */
+    color: white;
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s, color 0.3s;
@@ -57,8 +57,8 @@ nav ul li a:hover {
 
 .cart-icon {
     font-size: 18px;
-    color: white; /* Ensure cart icon is visible */
-    cursor: pointer; /* Change cursor to pointer */
+    color: white;
+    cursor: pointer;
     transition: color 0.3s;
 }
 
@@ -70,8 +70,8 @@ nav ul li a:hover {
 .header {
     text-align: center;
     padding: 50px 20px;
-    background-color: black; /* Change this to black */
-    overflow: hidden; /* Ensure the sliding text is not cut off */
+    background-color: black;
+    overflow: hidden;
 }
 
 .header h1 {
@@ -120,8 +120,8 @@ nav ul li a:hover {
 
 .game-item img {
     width: 100%;
-    height: 150px; /* Set a fixed height for the images */
-    object-fit: cover; /* Ensure the images cover the area without distortion */
+    height: 150px;
+    object-fit: cover;
     border-radius: 10px;
     margin-bottom: 10px;
 }
@@ -263,9 +263,9 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(to right, #000, #333); 
-    color: #fff; 
-    padding: 40px 20px; 
+    background: linear-gradient(to right, #000, #333);
+    color: #fff;
+    padding: 40px 20px;
     text-align: center;
 }
 
@@ -273,7 +273,7 @@ footer .branding {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
 }
 
 footer .branding h2 {
@@ -283,13 +283,13 @@ footer .branding h2 {
 }
 
 footer .branding img {
-    width: 240px; 
-    height: 200px; 
+    width: 240px;
+    height: 200px;
 }
 
 footer .contact-info {
     border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1); 
+    background: rgba(255, 255, 255, 0.1);
     color: white;
     padding: 20px;
     margin: 5px;
@@ -317,7 +317,7 @@ footer .newsletter button {
     border-radius: 20px;
     padding: 10px 20px;
     cursor: pointer;
-    transition: background 0.3s; 
+    transition: background 0.3s;
 }
 
 footer .newsletter button:hover {
@@ -337,13 +337,13 @@ footer .social-media a {
 }
 
 footer .social-media img {
-    width: 30px; 
-    height: 30px; 
-    transition: transform 0.3s; 
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
 }
 
 footer .social-media img:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
 }
 
 footer p {
@@ -358,7 +358,7 @@ footer p {
     top: 0;
     width: 300px;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background to match the site */
+    background-color: rgba(0, 0, 0, 0.9);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -366,21 +366,21 @@ footer p {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    color: white; /* Ensure text is visible */
+    color: white;
 }
 
 .cart h2 {
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white; /* Ensure heading is visible */
+    color: white;
 }
 
 .cart #cart-items {
     flex-grow: 1;
     overflow-y: auto;
     margin-bottom: 20px;
-    padding-bottom: 60px; /* Add padding to the bottom to prevent overlap */
+    padding-bottom: 60px;
 }
 
 .cart-item {
@@ -406,11 +406,11 @@ footer p {
 .cart-item .original-price {
     text-decoration: line-through;
     margin-right: 10px;
-    color: #ff4d4d; /* Red color for the original price */
+    color: #ff4d4d;
 }
 
 .cart-item .discounted-price {
-    color: #00ff00; /* Green color for the discounted price */
+    color: #00ff00;
 }
 
 .cart-item button {
@@ -429,7 +429,7 @@ footer p {
 .cart #total-price {
     font-size: 18px;
     margin-bottom: 20px;
-    color: white; /* Ensure total price is visible */
+    color: white;
     text-align: center;
 }
 
@@ -492,7 +492,7 @@ footer p {
 .hero h1 {
     font-size: 48px;
     margin-bottom: 20px;
-    color: white; /* Ensure hero text is visible */
+    color: white;
 }
 
 /* Promo card styles */
@@ -501,10 +501,10 @@ footer p {
     border-radius: 10px;
     padding: 20px;
     display: inline-block;
-    position: absolute; 
-    top: 20%; 
-    right: 7%; 
-    transform: translateY(-20%); 
+    position: absolute;
+    top: 20%;
+    right: 7%;
+    transform: translateY(-20%);
     padding: 5px 2px;
 }
 
@@ -519,7 +519,7 @@ footer p {
 
 .promo-text {
     text-align: center;
-    color: black; /* Ensure promo text is visible */
+    color: black;
 }
 
 .promo-text h2 {
@@ -556,7 +556,7 @@ footer p {
     font-size: 40px;
     text-align: center;
     margin-bottom: 40px;
-    color: white; /* Ensure news section heading is visible */
+    color: white;
 }
 
 .news-cards {
@@ -571,7 +571,7 @@ footer p {
     border-radius: 10px;
     width: 300px;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -581,7 +581,7 @@ footer p {
 
 .news-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Add white glow effect */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
 }
 
 .news-card img {
@@ -594,11 +594,11 @@ footer p {
 .news-card h3 {
     font-size: 20px;
     margin-bottom: 10px;
-    color: white; /* Ensure news card title is visible */
+    color: white;
 }
 
 .news-card p {
-    color: white; /* Ensure news card text is visible */
+    color: white;
     margin-bottom: 15px;
 }
 
@@ -692,4 +692,46 @@ footer p {
 
 .related-news ul li a:hover {
     text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header h1 {
+        font-size: 36px;
+    }
+
+    .news-card {
+        width: 100%;
+    }
+
+    .news-card.active {
+        width: 100%;
+        transform: scale(1);
+    }
+
+    .cart {
+        width: 100%;
+    }
+
+    .cart #checkout-button {
+        width: 90%;
+    }
+
+    footer .branding {
+        flex-direction: column;
+    }
+
+    footer .branding img {
+        width: 100%;
+        height: auto;
+    }
 }
