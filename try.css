@@ -435,9 +435,10 @@ footer p {
 
 .cart #total-price {
     font-size: 18px;
-    margin-bottom: 20px;
+    bottom: 50px;
     color: white;
     text-align: center;
+    position: relative;
 }
 
 .cart #checkout-button {
@@ -451,7 +452,7 @@ footer p {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 80%;
+    width: 90%;
     transition: background 0.3s;
 }
 
