@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <nav>
+        <a href="try.html" class="logo">PLAGUEHAVEN</a>
+        <ul>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="try.html">Events</a></li>
+            <li><a href="store.html">Shop</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-icon">🛒 0</div>
+    </nav>
+    <header class="header">
+        <h1 class="slide-up">Latest Gaming News</h1>
+    </header>
+    <section class="news-content">
+        <div class="news-card" onclick="toggleCardSize(this)">
+            <article>
+                <h2>Breaking News: New Game Releases</h2>
+                <img src="images/20250116043059_gta.webp" alt="New Game Releases">
+                <p>Stay updated with the latest game releases and industry news. Our team brings you the most recent updates from the gaming world.</p>
+            </article>
+        </div>
+        <div class="news-card" onclick="toggleCardSize(this)">
+            <article>
+                <h2>Game Developers: Behind the Scenes</h2>
+                <img src="images/dcb38c70-28a6-11ed-a77f-d92be29b5fc1.jpeg" alt="Game Developers">
+                <p>Explore the stories, development processes, and culture of game developers. Get an inside look at how your favorite games are made.</p>
+            </article>
+        </div>
+        <div class="news-card" onclick="toggleCardSize(this)">
+            <article>
+                <h2>Upcoming Games: What to Expect</h2>
+                <img src="images/kratos-egyptian-pyramid.avif" alt="Upcoming Games">
+                <p>Keep up with the gaming calendar and find out what exciting new games are on the horizon. Don't miss out on any upcoming releases.</p>
+            </article>
+        </div>
+        <div class="news-card" onclick="toggleCardSize(this)">
+            <article>
+                <h2>Rumor: God of War Saga Remaster Announcement Could Be Happening Soon</h2>
+                <img src="images/classic-god-of-war-remaster-rumor.avif" alt="God of War Remaster">
+                <p>Rumors suggest a remaster of the original God of War trilogy may be announced soon, possibly during the next PlayStation State of Play. Fans have only been able to play God of War 3 Remastered without a PS Plus subscription on recent PlayStation hardware. Santa Monica Studio may also be working on a new God of War game set in ancient Egypt or a prequel to the original trilogy.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <div class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="total-price">₹0.00</span></p>
+        <button id="checkout-button">Checkout</button>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <footer>
+        <div class="branding">
+            <div>
+                <img src="images/logo.png" alt="Logo">
+                <h2>PLAGUEHAVEN</h2>
+            </div>
+            <div class="contact-info">
+                <p>123-456-7890</p>
+                <p>info@mysite.com</p>
+                <p>500 Terry Francois Street, 6th Floor, San Francisco, CA 94158</p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <input type="email" placeholder="Email *">
+                <div>
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe">Yes, subscribe me to your newsletter. *</label>
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-brands-solid (1).svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-brands-solid (1).svg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-brands-solid (1).svg" alt="Instagram"></a>
+            <p>© 2025 by PLAGUEHAVEN</p>
+        </div>
+    </footer>
+
+    <script src="cart.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.slide-up').classList.add('visible');
+            }, 500); // Adjust the delay as needed
+        });
+
+        function toggleCardSize(card) {
+            // Toggle the 'active' class on the clicked news card
+            card.classList.toggle('active');
+
+            // Add event listener to close the card when clicking outside
+            document.addEventListener('click', function(event) {
+                if (!card.contains(event.target) && card.classList.contains('active')) {
+                    card.classList.remove('active');
+                }
+            }, { once: true });
+        }
+    </script>
+</body>
+</html>

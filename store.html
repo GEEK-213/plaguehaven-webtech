@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <nav>
+        <a href="try.html" class="logo">PLAGUEHAVEN</a>
+        <ul>
+            <li><a href="try.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="try.html">Events</a></li>
+            <li><a href="store.html">Shop</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-icon">🛒 0</div>
+    </nav>
+    <header class="header">
+        <h1 class="slide-up">Welcome to the Game Store</h1>
+    </header>
+    
+    <section class="store">
+        <h2>Available Games</h2>
+        <div class="game-list">
+            <div class="game-item">
+                <img src="images/Elden_Ring_Box_art.jpg" alt="Elden Ring">
+                <h3>Elden Ring</h3>
+                <p id="original-price">₹3599.00</p>
+                <p>₹2160.00</p>
+                <button onclick="addToCart({name: 'Elden Ring', originalPrice: 3599, price: 2160, image: 'images/Elden_Ring_Box_art.jpg'})">Purchase</button>
+            </div>
+            <div class="game-item">
+                <img src="images/Grand_Theft_Auto_V.png" alt="GTA V">
+                <h3>Grand Theft Auto V</h3>
+                <p id="original-price">₹2599.00</p>
+                <p>₹1978.00</p>
+                <button onclick="addToCart({name: 'Grand Theft Auto V', originalPrice: 2599, price: 1978, image: 'images/Grand_Theft_Auto_V.png'})">Purchase</button>
+            </div>
+            <div class="game-item">
+                <img src="images/witcher 3.webp" alt="The Witcher 3">
+                <h3>The Witcher 3: Wild Hunt</h3>
+                <p id="original-price">₹2999.00</p>
+                <p>₹1799.00</p>
+                <button onclick="addToCart({name: 'The Witcher 3: Wild Hunt', originalPrice: 2999, price: 1799, image: 'images/The_Witcher_3.jpg'})">Purchase</button>
+            </div>
+            <div class="game-item">
+                <img src="images/red dead redemption2.avif" alt="Red Dead Redemption 2">
+                <h3>Red Dead Redemption 2</h3>
+                <p id="original-price">₹3499.00</p>
+                <p>₹2099.00</p>
+                <button onclick="addToCart({name: 'Red Dead Redemption 2', originalPrice: 3499, price: 2099, image: 'images/Red_Dead_Redemption_2.jpg'})">Purchase</button>
+            </div>
+            <div class="game-item">
+                <img src="images/Cyberpunk_2077_box_art.jpg" alt="Cyberpunk 2077">
+                <h3>Cyberpunk 2077</h3>
+                <p id="original-price">₹3999.00</p>
+                <p>₹2399.00</p>
+                <button onclick="addToCart({name: 'Cyberpunk 2077', originalPrice: 3999, price: 2399, image: 'images/Cyberpunk_2077.jpg'})">Purchase</button>
+            </div>
+            <div class="game-item">
+                <img src="images/Assassin's_Creed_Valhalla_cover.jpg" alt="Assassin's Creed Valhalla">
+                <h3>Assassin's Creed Valhalla</h3>
+                <p id="original-price">₹3499.00</p>
+                <p>₹2099.00</p>
+                <button onclick="addToCart({name: 'Assassin\'s Creed Valhalla', originalPrice: 3499, price: 2099, image: 'images/Assassins_Creed_Valhalla.jpg'})">Purchase</button>
+            </div>
+            <div class="game-item">
+                <img src="images/Horizon_Zero_Dawn.jpg" alt="Horizon Zero Dawn">
+                <h3>Horizon Zero Dawn</h3>
+                <p id="original-price">₹2999.00</p>
+                <p>₹1799.00</p>
+                <button onclick="addToCart({name: 'Horizon Zero Dawn', originalPrice: 2999, price: 1799, image: 'images/Horizon_Zero_Dawn.jpg'})">Purchase</button>
+            </div>
+            <div class="game-item">
+                <img src="images/god-of-war-pc-game-steam-cover.jpg" alt="God of War">
+                <h3>God of War</h3>
+                <p id="original-price">₹3499.00</p>
+                <p>₹2099.00</p>
+                <button onclick="addToCart({name: 'God of War', originalPrice: 3499, price: 2099, image: 'images/God_of_War.jpg'})">Purchase</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <div class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: ₹0.00</p>
+        <button id="checkout-button">Checkout</button>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <footer>
+        <div class="branding">
+            <div>
+                <img src="images/logo.png" alt="Logo">
+                <h2>PLAGUEHAVEN</h2>
+            </div>
+            <div class="contact-info">
+                <p>123-456-7890</p>
+                <p>info@mysite.com</p>
+                <p>500 Terry Francois Street, 6th Floor, San Francisco, CA 94158</p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <input type="email" placeholder="Email *">
+                <div>
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe">Yes, subscribe me to your newsletter. *</label>
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-brands-solid (1).svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-brands-solid (1).svg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-brands-solid (1).svg" alt="Instagram"></a>
+            <p>© 2025 by PLAGUEHAVEN</p>
+        </div>
+    </footer>
+
+    <script src="cart.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.slide-up').classList.add('visible');
+            }, 500); // Adjust the delay as needed
+        });
+    </script>
+</body>
+</html>

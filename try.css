@@ -1,0 +1,695 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; /* Set the body background color to black */
+    color: white; /* Ensure text is visible against the black background */
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+    height: 60px; /* Ensure the nav bar has a defined height */
+    position: sticky; /* Make the nav bar sticky */
+    top: 0; /* Stick to the top of the viewport */
+    z-index: 10; /* Bring it above other elements */
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; /* Ensure logo text is visible */
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white; /* Ensure nav links are visible */
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+}
+
+.cart-icon {
+    font-size: 18px;
+    color: white; /* Ensure cart icon is visible */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: color 0.3s;
+}
+
+.cart-icon:hover {
+    color: #007bff;
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: black; /* Change this to black */
+    overflow: hidden; /* Ensure the sliding text is not cut off */
+}
+
+.header h1 {
+    font-size: 48px;
+    color: white;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.header h1.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Store section styles */
+.store {
+    padding: 50px 20px;
+    background-color: #000000;
+}
+
+.store h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+}
+
+.game-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.game-item {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.game-item img {
+    width: 100%;
+    height: 150px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure the images cover the area without distortion */
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.game-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.game-item p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.game-item button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.game-item button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* About section styles */
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+.about-content {
+    flex: 1;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-images {
+    flex: 1;
+    max-width: 600px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contact section styles */
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px 20px;
+    background-color: #222;
+}
+
+.contact-form, .contact-info {
+    flex: 1;
+    max-width: 600px;
+    margin: 20px;
+}
+
+.contact-form h2, .contact-info h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.map iframe {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(to right, #000, #333); 
+    color: #fff; 
+    padding: 40px 20px; 
+    text-align: center;
+}
+
+footer .branding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+footer .branding h2 {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer .branding img {
+    width: 240px; 
+    height: 200px; 
+}
+
+footer .contact-info {
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    color: white;
+    padding: 20px;
+    margin: 5px;
+}
+
+footer .newsletter {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+footer .newsletter input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+footer .newsletter button {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s; 
+}
+
+footer .newsletter button:hover {
+    background: #0056b3;
+}
+
+footer .social-media {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+footer .social-media a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social-media img {
+    width: 30px; 
+    height: 30px; 
+    transition: transform 0.3s; 
+}
+
+footer .social-media img:hover {
+    transform: scale(1.1); 
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Cart styles */
+.cart {
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background to match the site */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white; /* Ensure text is visible */
+}
+
+.cart h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white; /* Ensure heading is visible */
+}
+
+.cart #cart-items {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding-bottom: 60px; /* Add padding to the bottom to prevent overlap */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.cart-item div {
+    flex-grow: 1;
+}
+
+.cart-item .original-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: #ff4d4d; /* Red color for the original price */
+}
+
+.cart-item .discounted-price {
+    color: #00ff00; /* Green color for the discounted price */
+}
+
+.cart-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.cart-item button:hover {
+    background-color: #ff1a1a;
+}
+
+.cart #total-price {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white; /* Ensure total price is visible */
+    text-align: center;
+}
+
+.cart #checkout-button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 80%;
+    transition: background 0.3s;
+}
+
+.cart #checkout-button:hover {
+    background-color: #0056b3;
+}
+
+.cart.open {
+    transform: translateX(0);
+}
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+
+.cart-overlay.open {
+    display: block;
+}
+
+/* Hero section styles */
+.hero {
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+    padding: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: url('images/Elden-Header.jpg') no-repeat center center/cover;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: white; /* Ensure hero text is visible */
+}
+
+/* Promo card styles */
+.promo-card {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    display: inline-block;
+    position: absolute; 
+    top: 20%; 
+    right: 7%; 
+    transform: translateY(-20%); 
+    padding: 5px 2px;
+}
+
+.promo-card img {
+    max-width: 50%;
+    border-radius: 10px;
+    align-items: center;
+    display: flexbox;
+    margin: 1px;
+    padding: 1px;
+}
+
+.promo-text {
+    text-align: center;
+    color: black; /* Ensure promo text is visible */
+}
+
+.promo-text h2 {
+    font-size: 20px;
+    margin: 10px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.promo-text button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.promo-text button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* News section styles */
+.news {
+    padding: 50px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.news h2 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white; /* Ensure news section heading is visible */
+}
+
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.news-card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5); /* Add white glow effect */
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.news-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white; /* Ensure news card title is visible */
+}
+
+.news-card p {
+    color: white; /* Ensure news card text is visible */
+    margin-bottom: 15px;
+}
+
+.news-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.news-card a:hover {
+    text-decoration: underline;
+}
+
+/* News content styles */
+.news-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.news-card {
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, width 0.3s, height 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.news-card:hover {
+    transform: translateY(-10px);
+}
+
+.news-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-card article {
+    padding: 20px;
+}
+
+.news-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.news-card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.news-card.active {
+    width: 600px;
+    height: auto;
+    transform: scale(1.1);
+}
+
+.related-news {
+    padding: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.related-news h3 {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.related-news ul {
+    list-style: none;
+    padding: 0;
+}
+
+.related-news ul li {
+    margin-bottom: 10px;
+}
+
+.related-news ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.related-news ul li a:hover {
+    text-decoration: underline;
+}

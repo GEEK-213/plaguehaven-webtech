@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="try.css">
+</head>
+<body>
+    <nav>
+        <a href="try.html" class="logo">PLAGUEHAVEN</a>
+        <ul>
+            <li><a href="news.html">News</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="try.html">Events</a></li>
+            <li><a href="store.html">Shop</a></li>
+        </ul>
+        <div class="cart-icon" id="cart-icon">🛒 0</div>
+    </nav>
+    <header class="header">
+        <h1 class="slide-up">About Us</h1>
+    </header>
+    <section class="about">
+        <div class="about-content">
+            <h2>Our Mission</h2>
+            <p>Welcome to PLAGUEHAVEN, your number one source for all things gaming. We're dedicated to giving you the very best of games, with a focus on quality, customer service, and uniqueness.</p>
+            <h2>Our Story</h2>
+            <p>Founded in 2025, PLAGUEHAVEN has come a long way from its beginnings. When we first started out, our passion for gaming drove us to do tons of research so that PLAGUEHAVEN can offer you the world's most advanced games. We now serve customers all over the world and are thrilled that we're able to turn our passion into our own website.</p>
+            <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+            <p>Sincerely,</p>
+            <p>The PLAGUEHAVEN Team</p>
+        </div>
+        <div class="about-images">
+            <img src="images/team.jpg" alt="Our Team">
+            <img src="images/office.jpg" alt="Our Office">
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <div class="cart" id="cart">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <p>Total: <span id="total-price">₹0.00</span></p>
+        <button id="checkout-button">Checkout</button>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay"></div>
+
+    <footer>
+        <div class="branding">
+            <div>
+                <img src="images/logo.png" alt="Logo">
+                <h2>PLAGUEHAVEN</h2>
+            </div>
+            <div class="contact-info">
+                <p>123-456-7890</p>
+                <p>info@mysite.com</p>
+                <p>500 Terry Francois Street, 6th Floor, San Francisco, CA 94158</p>
+            </div>
+            <div class="newsletter">
+                <h3>Subscribe to Our Newsletter</h3>
+                <input type="email" placeholder="Email *">
+                <div>
+                    <input type="checkbox" id="subscribe">
+                    <label for="subscribe">Yes, subscribe me to your newsletter. *</label>
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+        <div class="social-media">
+            <a href="#"><img src="images/facebook-brands-solid (1).svg" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-brands-solid (1).svg" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-brands-solid (1).svg" alt="Instagram"></a>
+            <p>© 2025 by PLAGUEHAVEN</p>
+        </div>
+    </footer>
+
+    <script src="cart.js" defer></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            setTimeout(function() {
+                document.querySelector('.slide-up').classList.add('visible');
+            }, 500); // Adjust the delay as needed
+        });
+    </script>
+</body>
+</html>
