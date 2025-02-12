@@ -438,7 +438,8 @@ footer p {
     bottom: 50px;
     color: white;
     text-align: center;
-    position: relative;
+position: relative;
+position: relative;
 }
 
 .cart #checkout-button {
