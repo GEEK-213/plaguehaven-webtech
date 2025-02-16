@@ -766,19 +766,24 @@ position: relative;
         width: 90%;
     }
 
-    footer .branding {
+    footer .row {
         flex-direction: column;
+        align-items: center;
     }
 
-    footer .branding img {
-        width: 100%;
-        height: auto;
+    footer .col {
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    footer .logo2 {
+        width: 150px;
     }
 
     .game-list {
-       display: flex;
-         flex-direction: column;
-            align-items: center;
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
