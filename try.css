@@ -270,92 +270,109 @@ nav ul li a:hover {
 
 /* Footer styles */
 footer {
-    background: linear-gradient(to right, #000, #333);
+    width: 100%;
+    background: linear-gradient(to right, #000000, #1e1e1e);
     color: #fff;
-    padding: 40px 20px;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: 25%;
+    padding: 5px;
+}
+
+.col:nth-child(2), .col:nth-child(3) {
+    flex-basis: 10%;
+}
+
+.logo2 {
+    width: 200px;
+    margin: 1px;
+}
+
+.col h3 {
+    width: fit-content;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.email-id {
+    width: fit-content;
+    border-bottom: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+form .fa-regular {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+form button .fa-solid {
+    font-size: 16px;
+    color: #ccc;
+}
+
+.social-icons .fa-brands {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 20px auto;
+}
+
+.box69 {
     text-align: center;
 }
 
-footer .branding {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-footer .branding h2 {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-footer .branding img {
-    width: 240px;
-    height: 200px;
-}
-
-footer .contact-info {
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    color: white;
-    padding: 20px;
-    margin: 5px;
-}
-
-footer .newsletter {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 5px;
-}
-
-footer .newsletter input[type="email"] {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 10px;
-    width: 100%;
-}
-
-footer .newsletter button {
-    background: #007bff;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-footer .newsletter button:hover {
-    background: #0056b3;
-}
-
-footer .social-media {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-footer .social-media a {
-    color: white;
-    text-decoration: none;
-}
-
-footer .social-media img {
-    width: 30px;
-    height: 30px;
-    transition: transform 0.3s;
-}
-
-footer .social-media img:hover {
-    transform: scale(1.1);
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 14px;
+copyright {
+    text-align: center;
 }
 
 /* Cart styles */
