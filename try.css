@@ -823,6 +823,29 @@ position: relative;
         flex-direction: column;
         align-items: center;
     }
+    
+    .about, .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-content, .contact-form, .contact-info {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .promo-card {
+        width: 90%;
+        top: 10%;
+        right: 5%;
+        transform: translateY(0);
+    }
+
+    .event img {
+        width: 100%;
+        height: auto;
+    }
 }
+
 
 
