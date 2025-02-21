@@ -33,7 +33,9 @@
             <p>The PLAGUEHAVEN Team</p>
         </div>
         <div class="about-images">
-           
+            <img src="images/team1.jpg" alt="Team Image 1">
+            <img src="images/team2.jpg" alt="Team Image 2">
+            <img src="images/team3.jpg" alt="Team Image 3">
         </div>
     </section>
 
@@ -109,6 +111,11 @@
                 document.querySelector('.slide-up').classList.add('visible');
             }, 500); 
         });
+
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('show');
+        }
     </script>
 </body>
 </html>
