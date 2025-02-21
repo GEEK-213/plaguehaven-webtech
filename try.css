@@ -496,7 +496,10 @@ position: relative;
 .cart-overlay.open {
     display: block;
 }
-
+.original-price {
+    text-decoration: line-through;
+    color: #ff4d4d; 
+}
 /* Hero section styles */
 .hero {
     border-radius: 10px;
@@ -787,3 +790,5 @@ position: relative;
         align-items: center;
     }
 }
+
+
