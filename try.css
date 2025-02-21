@@ -735,6 +735,14 @@ position: relative;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+.event img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
 }
 
 .event h2 {
