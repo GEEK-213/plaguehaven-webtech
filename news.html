@@ -123,14 +123,14 @@
         document.addEventListener('DOMContentLoaded', function() {
             setTimeout(function() {
                 document.querySelector('.slide-up').classList.add('visible');
-            }, 500); // Adjust the delay as needed
+            }, 500); 
         });
 
         function toggleCardSize(card) {
-            // Toggle the 'active' class on the clicked news card
+            
             card.classList.toggle('active');
 
-            // Add event listener to close the card when clicking outside
+           
             document.addEventListener('click', function(event) {
                 if (!card.contains(event.target) && card.classList.contains('active')) {
                     card.classList.remove('active');
