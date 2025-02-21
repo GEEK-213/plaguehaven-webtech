@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Events</title>
     <link rel="stylesheet" href="try.css">
 </head>
 <body>
@@ -13,37 +13,33 @@
             <li><a href="news.html">News</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="index.html">Events</a></li>
+            <li><a href="event.html">Events</a></li>
             <li><a href="store.html">Shop</a></li>
         </ul>
         <div class="cart-icon" id="cart-icon">🛒 0</div>
         <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
     </nav>
     <header class="header">
-        <h1 class="slide-up">Contact Us</h1>
+        <h1 class="slide-up">Upcoming Valorant Tournaments</h1>
     </header>
-    <section class="contact">
-        <div class="contact-form">
-            <h2>Get in Touch</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
+    <section class="events">
+        <div class="event">
+            <h2>Valorant Tournament - Margao Championship</h2>
+            <p>Date: March 20, 2025</p>
+            <p>Location: Margao, Goa</p>
+            <p>Join us for the Margao Championship Valorant Tournament! Compete with the best teams in the city and win exciting prizes.</p>
         </div>
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong>  Farmagudi, Donshiwado, Ponda, Bandiwada, Goa 403401</p>
-            <p><strong>Phone:</strong> 9322507460</p>
-            <p><strong>Email:</strong> plaguehaven213@gmail.com</p>
-            <h2>Find Us</h2>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4061.8021684807495!2d73.99045507512213!3d15.406703885180876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfbaf0ceaf772f%3A0xe306f2b3ab4a7b7c!2sGoa%20Vidyaprasarak%20Mandal&#39;s%20Gopal%20Govind%20Poy%20Raiturcar%20College%20of%20Commerce%20and%20Economics!5e1!3m2!1sen!2sin!4v1739281459431!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="event">
+            <h2>Valorant Tournament - Panaji Qualifiers</h2>
+            <p>Date: April 15, 2025</p>
+            <p>Location: Panaji, Goa</p>
+            <p>Participate in the Panaji Qualifiers for a chance to advance to the national level. Show your skills and compete with top teams.</p>
+        </div>
+        <div class="event">
+            <h2>Valorant Tournament - Ponda Finals</h2>
+            <p>Date: May 10, 2025</p>
+            <p>Location: Ponda, Goa</p>
+            <p>The Ponda Finals are here! Witness the best teams from across the region battle it out for the championship title and grand prizes.</p>
         </div>
     </section>
 
@@ -57,8 +53,8 @@
 
     <div id="cart-overlay" class="cart-overlay"></div>
 
-     <!-- Footer Section -->
-     <footer>
+    <!-- Footer Section -->
+    <footer>
         <div class="row">
             <div class="col">
                 <img src="images/logo.png" class="logo2" alt="Logo">
@@ -119,32 +115,6 @@
                 document.querySelector('.slide-up').classList.add('visible');
             }, 500); 
         });
-    </script>
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-
-            if (!name || !email || !message) {
-                alert('Please fill in all fields.');
-                return;
-            }
-
-            if (!validateEmail(email)) {
-                alert('Please enter a valid email address.');
-                return;
-            }
-
-            alert('Thank you for your message!');
-           
-        });
-
-        function validateEmail(email) {
-            const re = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-            return re.test(String(email).toLowerCase());
-        }
 
         function toggleMenu() {
             const navLinks = document.getElementById('nav-links');
