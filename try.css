@@ -322,7 +322,7 @@ form {
     margin-bottom: 50px;
 }
 
-form .fa-regular {
+form .fa-regular i{
     font-size: 18px;
     margin-right: 10px;
 }
@@ -371,7 +371,7 @@ hr {
     text-align: center;
 }
 
-copyright {
+.copyright {
     text-align: center;
 }
 
