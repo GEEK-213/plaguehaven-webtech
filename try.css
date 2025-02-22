@@ -322,10 +322,11 @@ form {
     margin-bottom: 50px;
 }
 
-form .fa-regular i{
+form .fa-regular {
     font-size: 18px;
     margin-right: 10px;
 }
+
 
 form input {
     width: 100%;
@@ -343,8 +344,8 @@ form button {
 }
 
 form button .fa-solid {
-    font-size: 16px;
-    color: #ccc;
+    font-size: 100px;
+    color: #fffbfb;
 }
 
 .social-icons .fa-brands {
@@ -354,7 +355,7 @@ form button .fa-solid {
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    color: #000;
+    color: #fffefe;
     background: #fff;
     margin-right: 15px;
     cursor: pointer;
