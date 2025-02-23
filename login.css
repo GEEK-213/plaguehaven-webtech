@@ -1,103 +1,106 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --primary-color: #6a11cb;
+  --secondary-color: #2575fc;
+  --background-color: black;
+  --text-color: white;
+  --hover-background-color: #007bff;
+  --box-shadow-color: rgba(106, 17, 203, 0.5);
+  --box-shadow-hover-color: rgba(106, 17, 203, 0.7);
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'Poppins', Arial, sans-serif;
 }
 
 /* Navigation styles */
 nav {
-    margin-right: 460px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: black;
-    padding: 10px 20px;
-    height: 60px;
-    position: sticky;
-    top: 0;
-    z-index: 10;
+  margin-right: 460px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 10px 20px;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 nav .logo {
-    font-size: 24px;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: white;
-    text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-color);
+  text-decoration: none;
 }
 
 nav .menu-icon {
-    display: none;
-    font-size: 24px;
-    color: white;
-    cursor: pointer;
+  display: none;
+  font-size: 24px;
+  color: var(--text-color);
+  cursor: pointer;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin: 0 15px;
-    text-align: center;
+  margin: 0 15px;
+  text-align: center;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s, color 0.3s;
+  color: var(--text-color);
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #007bff;
-    color: white;
-    border-radius: 5px;
+  background-color: var(--hover-background-color);
+  color: var(--text-color);
+  border-radius: 5px;
 }
 
 .cart-icon {
-    font-size: 18px;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s;
+  font-size: 18px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: color 0.3s;
 }
 
 .cart-icon:hover {
-    color: #007bff;
+  color: var(--hover-background-color);
 }
 
-
 .wrapper {
-   
   position: absolute;
   top: 150px;
   left: 600px;
   width: 400px;
   height: 500px;
   background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 20px rgba(106, 17, 203, 0.5);
+  box-shadow: 0 0 20px var(--box-shadow-color);
   border-radius: 20px;
   padding: 40px;
   overflow: hidden;
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.1);
-  /* margin-left: 600px; */
-
 }
 
 .wrapper:hover {
-  box-shadow: 0 0 30px rgba(106, 17, 203, 0.7);
+  box-shadow: 0 0 30px var(--box-shadow-hover-color);
 }
 
 .form-wrapper {
@@ -125,7 +128,7 @@ nav ul li a:hover {
 
 h2 {
   font-size: 30px;
-  color: #fff;
+  color: var(--text-color);
   text-align: center;
 }
 
@@ -141,16 +144,16 @@ h2 {
   left: 5px;
   transform: translateY(-50%);
   font-size: 16px;
-  color: #fff;
+  color: var(--text-color);
   pointer-events: none;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .input-group input {
   width: 320px;
   height: 40px;
   font-size: 16px;
-  color: #fff;
+  color: var(--text-color);
   padding: 0 5px;
   background: transparent;
   border: none;
@@ -167,22 +170,22 @@ h2 {
 }
 
 .remember label {
-  color: #fff;
+  color: var(--text-color);
   font-size: 14px;
 }
 
 .remember label input {
-  accent-color: #6a11cb;
+  accent-color: var(--primary-color);
 }
 
 button {
   position: relative;
   width: 100%;
   height: 40px;
-  background: #6a11cb;
-  box-shadow: 0 0 10px rgba(106, 17, 203, 0.5);
+  background: var(--primary-color);
+  box-shadow: 0 0 10px var(--box-shadow-color);
   font-size: 16px;
-  color: #fff;
+  color: var(--text-color);
   font-weight: 500;
   cursor: pointer;
   border-radius: 30px;
@@ -192,7 +195,7 @@ button {
 }
 
 button:hover {
-  background: #2575fc;
+  background: var(--secondary-color);
 }
 
 .signUp-link {
@@ -202,17 +205,17 @@ button:hover {
 }
 
 .signUp-link p {
-  color: #fff;
+  color: var(--text-color);
 }
 
 .signUp-link p a {
-  color: #2575fc;
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
 }
 
 .signUp-link p a:hover {
-  color: #fff;
+  color: var(--text-color);
   text-decoration: underline;
 }

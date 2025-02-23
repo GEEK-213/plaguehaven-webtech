@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -24,26 +25,82 @@
         <h1 class="slide-up">Contact Us</h1>
     </header>
     <section class="contact">
-        <div class="contact-form">
-            <h2>Get in Touch</h2>
-            <form id="contact-form">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong>  Farmagudi, Donshiwado, Ponda, Bandiwada, Goa 403401</p>
-            <p><strong>Phone:</strong> 9322507460</p>
-            <p><strong>Email:</strong> plaguehaven213@gmail.com</p>
-            <h2>Find Us</h2>
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4061.8021684807495!2d73.99045507512213!3d15.406703885180876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfbaf0ceaf772f%3A0xe306f2b3ab4a7b7c!2sGoa%20Vidyaprasarak%20Mandal&#39;s%20Gopal%20Govind%20Poy%20Raiturcar%20College%20of%20Commerce%20and%20Economics!5e1!3m2!1sen!2sin!4v1739281459431!5m2!1sen!2sin" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="contact-container">
+            <div class="contact-form">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="form-description">Have a question or feedback? We'd love to hear from you.</p>
+                <form id="contact-form">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Your Name</label>
+                        <span class="input-icon"><i class="fas fa-user"></i></span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Your Email</label>
+                        <span class="input-icon"><i class="fas fa-envelope"></i></span>
+                    </div>
+        
+                    <div class="input-group">
+                        <select id="subject" name="subject" required>
+                            <option value="" disabled selected>Select Subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="support">Technical Support</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="input-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    
+                    <div class="input-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Your Message</label>
+                        <span class="input-icon"><i class="fas fa-comment-alt"></i></span>
+                    </div>
+        
+                    <button type="submit" class="submit-btn">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2 class="section-title">Find Us</h2>
+                <div class="info-group">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <h3>Address</h3>
+                        <p>library building LB-5 ROOM </p>
+                        <p>Farmagudi, Donshiwado, Ponda, Bandiwada, Goa 403401</p>
+                    </div>
+                </div>
+                
+                <div class="info-group">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h3>Phone</h3>
+                        <p>+91 9763435216</p>
+                        <p>+91 9322508702</p>
+                    </div>
+                </div>
+                
+                <div class="info-group">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p>contact@plaguehaven.com</p>
+                        <p>support@plaguehaven.com</p>
+                    </div>
+                </div>
+        
+                <div class="map-container">
+                   
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.122790371081!2d73.99045507512213!3d15.406703885180876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbfbaf0ceaf772f%3A0xe306f2b3ab4a7b7c!2sGoa%20Vidyaprasarak%20Mandal&#39;s%20Gopal%20Govind%20Poy%20Raiturcar%20College%20of%20Commerce%20and%20Economics!5e1!3m2!1sen!2sin!4v1740294632337!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                     
+                    
+                </div>
             </div>
         </div>
     </section>

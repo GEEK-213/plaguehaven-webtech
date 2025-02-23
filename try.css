@@ -205,17 +205,179 @@ nav ul li a:hover {
 /* Contact section styles */
 .contact {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    padding: 50px 20px;
-    background-color: #222;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, rgba(106, 17, 203, 0.1), rgba(37, 117, 252, 0.1));
+}
+
+/* Combined container for form and info */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 100%;
+    max-width: 1200px;
+    padding: 4rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
 }
 
 .contact-form, .contact-info {
     flex: 1;
-    max-width: 600px;
-    margin: 20px;
+    max-width: 500px;
+}
+
+/* Remove individual box styles */
+.contact-form {
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.contact-info {
+    padding: 0;
+    background: none;
+    backdrop-filter: none;
+    border-radius: 0;
+    box-shadow: none;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    padding-left: 4rem;
+}
+
+.info-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.info-group:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.info-group i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    padding: 0.5rem;
+    background: rgba(106, 17, 203, 0.1);
+    border-radius: 50%;
+}
+
+.info-group h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-group p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.map-container {
+    margin-top: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-description {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+    width: 100%;
+    padding: 1rem;
+    padding-left: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    font-size: 1rem;
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+.input-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.input-group label {
+    position: absolute;
+    left: 3rem;
+    top: 1rem;
+    color: #888;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label,
+.input-group textarea:focus ~ label,
+.input-group textarea:valid ~ label {
+    transform: translateY(-2rem);
+    font-size: 0.85rem;
+    color: var(--primary-color);
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    color: #888;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+}
+
+.submit-btn i {
+    transition: transform 0.3s ease;
+}
+
+.submit-btn:hover i {
+    transform: translateX(5px);
 }
 
 .contact-form h2, .contact-info h2 {
@@ -757,6 +919,8 @@ position: relative;
     margin-bottom: 10px;
 }
 
+
+
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav .menu-icon {
@@ -844,5 +1008,31 @@ position: relative;
     .event img {
         width: 100%;
         height: auto;
+    }
+
+    .contact {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .contact-info {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-left: 0;
+        padding-top: 2rem;
+    }
+
+    .contact-form, .contact-info {
+        max-width: 100%;
+    }
+
+    .info-group {
+        padding: 0.8rem;
     }
 }
